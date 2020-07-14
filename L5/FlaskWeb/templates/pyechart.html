@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>采购清单可视化</title>
+    <link rel="stylesheet" type="text/css" href="static/css/home.css"> <!--引用文件夹中的css样式:homework.css-->
+</head>
+<body> 
+  
+            
+  
+    <div class="main-content"> 
+        <h2>云图生成器</h2>  <!--使用h2标签实现标题样式-->
+        <h3>上传CSV数据</h4>
+
+        <form id="form1" method="post" action="/api/plotly" enctype="multipart/form-data">
+            <div>
+                <h5>显示单词词数</h5>
+                <input id='top' type="text" name='top'><br><br>
+            <div>
+                <input id="File1" type="file" name="myfile" />  <!--后台代码中获取文件是通过form的name来标识的-->
+                <input type="submit"></input>
+            </div>
+        </form>
+
+
+    </div>
+    
+    <div class="footer">  <!--第三个div,对应footer页脚部分-->
+        <p>&copy; ZitongPapa</p> <!--&copy;是©的固定写法-->
+    </div>
+</body>
+</html>
